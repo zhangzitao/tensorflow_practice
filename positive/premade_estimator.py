@@ -24,7 +24,7 @@ import iris_data
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--batch_size', default= 100, type=int, help='batch size')
-parser.add_argument('--train_steps', default= 1000, type=int,
+parser.add_argument('--train_steps', default= 3000, type=int,
                     help='number of training steps')
 
 def main(argv):
@@ -62,9 +62,9 @@ def main(argv):
     # Generate predictions from the model
     expected = ['Positive', 'PositiveB', 'PositiveBB', 'PositiveBBB']
     predict_x = {
-        'One': [1.25, 3.75, 6.25, 8.75],
-        'Two': [1.25, 3.75, 6.25, 8.75],
-        'Three': [1.25, 3.75, 6.25, 7.75],
+        'One': [1.25, 3.75, 6.25, 6.75],
+        'Two': [1.25, 3.75, 6.25, 9.75],
+        'Three': [1.25, 3.75, 6.25, 9.75],
         'Four': [1.25, 3.75, 6.25, 9.75],
         'Five': [1.25, 3.75, 6.25, 8.75]
     }

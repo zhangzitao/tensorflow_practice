@@ -1,7 +1,7 @@
 module Gen
   module_function
   def generate(base_name)
-    count = 500
+    count = 300
     file_name = File.join(File.dirname(__FILE__), base_name)
     file = File.new(file_name, "w")
     file.puts("#{count},5,Positive,PositiveB,PositiveBB,PositiveBBB")
